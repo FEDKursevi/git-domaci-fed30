@@ -1,0 +1,269 @@
+@import 'variables';
+@import 'mixins';
+@import 'grid';
+@import 'reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+// Mobile styles
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    background-color: $color-orange;
+    color: white;
+    padding: 15px 30px;
+
+    img {
+      width: 50px;
+    }
+
+    a {
+      font-weight: 400;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  ul {
+    background-color: $color-blue-dark;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    font-size: 18px;
+
+    li {
+      margin: 18px;
+    }
+  }
+}
+
+.section-1 {
+  background-color: black;
+  padding: 0 30px 40px 30px;
+  text-align: center;
+
+  .main-heading {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+  }
+
+  .sub-heading {
+    display: block;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+.section-2 {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  @include button-mobile;
+}
+
+.section-3 {
+  background-color: $color-grey-3;
+  padding: 50px 15px;
+  text-align: center;
+}
+
+.section-4 {
+  text-align: center;
+  padding: 30px;
+
+  table {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: $color-blue-dark;
+    text-transform: uppercase;
+    margin: 20px 20px 40px 20px;
+  }
+
+  p {
+    margin: 30px;
+  }
+
+  @include button-mobile;
+}
+
+.section-5 {
+  background-color: $color-grey-3;
+  padding: 15px;
+  text-align: center;
+
+  h1 {
+    color: $color-blue-dark;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 40px;
+  }
+
+  iframe {
+    width: 80%;
+    height: 300px;
+    margin: 30px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    background-color: $color-orange;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+    select,
+    input,
+    textarea {
+      font-size: 16px;
+      width: 100%;
+      margin: 15px 0;
+      border: none;
+      padding: 10px;
+      outline: none;
+    }
+  }
+}
+
+footer {
+  background-color: $color-blue-dark;
+  color: white;
+  text-align: center;
+  padding: 15px;
+
+  a {
+    color: $color-orange;
+  }
+}
+
+// Tablet styles
+@include tablet-small {
+  nav {
+    background-color: $color-blue-dark;
+    padding: 0;
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    ul {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+
+      li {
+        margin: 0 40px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .section-1 {
+    background-image: url(../slike/intro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+
+    h1 {
+      width: 80%;
+      padding: 0 100px;
+      background-color: rgba($color-blue-dark, 0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .section-4 {
+    table {
+      display: table;
+      @include table;
+      margin: 20px auto;
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  nav {
+    ul {
+      li {
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .section-1 {
+    h1 {
+      width: 55%;
+      padding: 0 100px;
+      background-color: rgba($color-blue-dark, 0.5);
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .section-3 {
+    padding: 20px 150px;
+  }
+
+  .section-5 {
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      iframe {
+        width: 400px;
+      }
+
+      form {
+        width: 40%;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          * > {
+            margin: 0 10px;
+          }
+        }
+
+        select {
+          width: 25%;
+        }
+
+        input[placeholder='Your name'] {
+          width: 65%;
+        }
+      }
+    }
+  }
+}

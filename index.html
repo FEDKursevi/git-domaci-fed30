@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>HomeExchange</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <h2>
+        <img src="slike/location.png" alt="Location pin" />
+        <a href="#"> New York</a>
+      </h2>
+      <ul>
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Sell</a></li>
+        <li><a href="#">Message</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Welcome section -->
+      <section class="section-1">
+        <h1>
+          <span class="main-heading"> Welcome to HomeExchange</span>
+          <span class="sub-heading"
+            >Your fastest way to find or sell home online.</span
+          >
+        </h1>
+        <h2></h2>
+      </section>
+      <!-- Buttons section -->
+      <section class="section-2">
+        <button>$1,200 - $4,000</button>
+        <button>1+ Bedroom</button>
+        <button>Garage</button>
+      </section>
+      <!-- Appartments section -->
+      <section class="section-3 grid">
+        <div class="item item-1">
+          <h2>
+            <span>Loft Apartment</span>
+            <span>$3,000</span>
+          </h2>
+          <!-- Display: none -> Mobile -->
+          <img src="slike/1.jpg" alt="Apartment 1" />
+        </div>
+        <div class="item item-2">
+          <h2>
+            <span>Lovely House</span>
+            <span>$3,500</span>
+          </h2>
+          <!-- Display: none -> Mobile -->
+          <img src="slike/2.jpg" alt="Apartment 1" />
+        </div>
+        <div class="item item-3">
+          <h2>
+            <span>Beachside Condo</span>
+            <span>$2,300</span>
+          </h2>
+          <!-- Display: none -> Mobile -->
+          <img src="slike/3.jpg" alt="Apartment 1" />
+        </div>
+        <div class="item item-4">
+          <h2>
+            <span>Center town Studio</span>
+            <span>$2,800</span>
+          </h2>
+          <!-- Display: none -> Mobile -->
+          <img src="slike/4.jpg" alt="Apartment 1" />
+        </div>
+        <div class="item item-5">
+          <h2>
+            <span>Artist Studio</span>
+            <span>$3,500</span>
+          </h2>
+          <!-- Display: none -> Mobile -->
+          <img src="slike/5.jpg" alt="Apartment 1" />
+        </div>
+        <div class="item item-6">
+          <h2>
+            <span>Downtown Apartment</span>
+            <span>$1,500</span>
+          </h2>
+          <!-- Display: none -> Mobile -->
+          <img src="slike/6.jpg" alt="Apartment 1" />
+        </div>
+      </section>
+      <!-- Prices section -->
+      <section class="section-4">
+        <h1>Pricing</h1>
+        <p>Our services prices in New York</p>
+        <!-- Display: none -> Mobile -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" class="none"></th>
+              <th class="orange" colspan="2">Price</th>
+            </tr>
+            <tr>
+              <th colspan="2" class="none"></th>
+              <th class="blue">Rent/Buy</th>
+              <th class="blue">Sell</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="orange" rowspan="3">Location</td>
+              <td class="blue">Downtown</td>
+              <td>3$</td>
+              <td>3$</td>
+            </tr>
+            <tr>
+              <td class="blue">Center</td>
+              <td>3$</td>
+              <td>3$</td>
+            </tr>
+            <tr>
+              <td class="blue">Manhattan</td>
+              <td>3$</td>
+              <td>3$</td>
+            </tr>
+          </tbody>
+        </table>
+        <button>Check the prices</button>
+      </section>
+      <!-- Contact section -->
+      <section class="section-5">
+        <h1>Contact us</h1>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1839486565!2d-73.98773128433993!3d40.75797874273781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2z0KLQsNGY0LzRgSDRgdC60LLQtdGA!5e0!3m2!1ssr!2srs!4v1609419946920!5m2!1ssr!2srs"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+          <form>
+            <div>
+              <select>
+                <option value="mr">Mr</option>
+                <option value="mrs" selected>Mrs</option>
+                <option value="other">Other</option>
+              </select>
+              <input type="text" placeholder="Your name" />
+            </div>
+            <input type="email" placeholder="Your email" />
+            <textarea placeholder="Your message"></textarea>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &copy; 2016 <a href="#">HomeExchange</a></p>
+    </footer>
+  </body>
+</html>

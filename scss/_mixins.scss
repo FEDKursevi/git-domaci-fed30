@@ -1,0 +1,55 @@
+@mixin tablet-small {
+  @media (min-width: 715px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 890px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin button-mobile {
+  button {
+    background-color: white;
+    border: 1px solid $color-grey-2;
+    border-radius: 30px;
+    padding: 18px 36px;
+    font-size: 16px;
+    color: $color-grey-1;
+    margin: 5px;
+  }
+}
+
+@mixin table {
+  font-size: 20px;
+  font-weight: 400;
+
+  td,
+  th {
+    border: 1px solid $color-grey-1;
+    padding: 10px 60px;
+  }
+
+  th {
+    font-weight: 400;
+  }
+  .orange {
+    background-color: $color-orange;
+    color: white;
+  }
+
+  .blue {
+    background-color: $color-blue-dark;
+    color: white;
+  }
+  .none {
+    border: none;
+  }
+}
